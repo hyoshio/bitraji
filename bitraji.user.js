@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @include     https://lightning.bitflyer.*/trade*
+// @match        https://lightning.bitflyer.jp/trade*
+// @match        https://lightning.bitflyer.com/trade*
 // @grant        none
 // @noframes
 // ==/UserScript==
@@ -23,7 +24,6 @@ window.onload = function() {
     function aaa(){
         var logboxx = document.querySelector("#logboxx");
         console.log(logboxx.value);
-        // var logbox = document.querySelector(".iframe-child").contentWindow.callme;
         logboxx.value = "hogeeee";
     }
     p_btn.addEventListener("click", aaa, false);
